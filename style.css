@@ -38,7 +38,7 @@
   }
   .lineNum{
   
-    font: .8em calibri;
+    font: .6em calibri;
     line-height: 1.8em;
   
   }
@@ -59,7 +59,7 @@
     margin: 0 1px 1px 0;
     display: inline-block;
     position: relative;
-    font: 24px Calibri;
+    font: 20px Calibri;
     width: 1.25em;
     height: 1.25em;
     line-height: 1.25em;
@@ -72,7 +72,7 @@
   }
   .char {
     font-family: sans-serif;
-    font-size:24px;
+    font-size:20px;
     text-transform: uppercase;
     outline: 0;
     border: 0;
