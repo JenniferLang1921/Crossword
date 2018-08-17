@@ -21,8 +21,7 @@
       font-weight: bold;
       color: #000;
   }
-  .line{
-  }
+  
   .word, .clue, .lineNum{
     display: inline-block;
     height: 1.4em;  
@@ -34,12 +33,12 @@
     margin: 0 20px 0 0;
   }
   .clue{
-    width: 500px;
+    width: 150px;
     margin: 0 0 4px 0;
   }
   .lineNum{
   
-    font: 1em calibri;
+    font: .8em calibri;
     line-height: 1.8em;
   
   }
@@ -54,7 +53,7 @@
   
   .crossword{
     display: block;  
-    background-color: rgb(32,32,32);  
+    background-color: navy;  
   }
   .square{  
     margin: 0 1px 1px 0;
@@ -129,4 +128,7 @@
       left: 2rem;
       top: 1rem;
       cursor: pointer;
+     
   }
+ 
+ 

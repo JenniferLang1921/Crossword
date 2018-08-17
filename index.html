@@ -1,110 +1,124 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-   
+
   <meta charset="utf-8">
   <!-- View Port Size -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
-  
+  <!--bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+
 </head>
+
 <body>
 
-        
 
- <div class="container crosswordDisplay">
+  <div class="container crosswordDisplay">
 
-       
-  
+
+
     <div class="row">
-
-           
-
-    <!-- Create & Play buttons required for user generated crossword - disabled for Proscribed questions -->
-        <div class="btn btn-default disabled" id="btnCreate">Create</div>
-        <div class="btn btn-default disabled" id="btnPlay">Play</div>
       
-        <div class="btn btn-default" id="btnReset">Reset</div>
-         <div class="btn btn-default" id="btnCheck">Check Answers</div>
-      </div>
-    
-      <div class="center crossword" id="crossword"></div>
-      
+
+      <h1>ATS Crossword Puzzle</h1>
+      <h1 id="AnswerCheck"></h1>
+
+      <!-- Create & Play buttons required for user generated crossword - disabled for Proscribed questions -->
+      <div class="btn btn-default disabled " id="btnCreate">Create</div>
+      <div class="btn btn-default disabled " id="btnPlay">Play</div>
+
+      <div class="btn btn-primary disabled" id="btnReset">Reset</div>
+      <div class="btn btn-secondary disabled" id="btnCheck">Check Answers</div>
+    </div>
+
+    <div class="col-lg-6 col-sm-12">
+    <div class="center crossword" id="crossword"></div>
+
     <div class="btn" id="btnGen">Generate</div>
-      
-      
-      <div class="col-lg-6 ">
+</div>
+
+    <div class="col-lg-6 col-sm-6">
       <div class="clueBlock" id="cluesAcross">
         <div class="clueDirection" id="directionAcross">ACROSS</div>
-    
         <div class="line">
           <input class="word" type="text" value="kite" />
-          <span class="lineNum"></span>
           <input class="clue" value="kite" />
-        </div>
-    
-        <div class="line">
-          <input class="word" type="text" value="charka" />
+
           <span class="lineNum"></span>
-          <input class="clue" value="charka" />
+
         </div>
-    
-        <div class="line">
-          <input class="word" type="text" value="facelift" />
-          <span class="lineNum"></span>
-          <input class="clue" value="facelift" />
-        </div>
-    
-        <div class="line">
-          <input class="word" type="text" value="feature"/>
-          <span class="lineNum"></span>
-          <input class="clue" value="feature" />
-        </div>
-    
-        <div class="line">
-          <input class="word" type="text" value="diamond"/>
-          <span class="lineNum"></span>
-          <input class="clue" value="diamond" />
-        </div>
-    
-        <div class="line">
-          <input class="word" type="text" value="deploy"/>
-          <span class="lineNum"></span>
-          <input class="clue" value="deploy" />
-        </div>
-    
-    
-        
-        </div>
-        
-        
-        
-        
-        
       </div>
-      
-      
-      <div class="col-lg-6">
+
+      <div class="line">
+        <input class="word" type="text" value="charka" />
+        <input class="clue" value="Our new software release" />
+        <span class="lineNum"></span>
+      </div>
+
+      <div class="line">
+        <input class="word" type="text" value="facelift" />
+        <input class="clue" value="facelift" />
+        <span class="lineNum"></span>
+      </div>
+
+      <div class="line">
+        <input class="word" type="text" value="feature" />
+        <input class="clue" value="feature" />
+        <span class="lineNum"></span>
+      </div>
+
+      <div class="line">
+        <input class="word" type="text" value="diamond" />
+        <input class="clue" value="diamond" />
+        <span class="lineNum"></span>
+      </div>
+
+      <div class="line">
+        <input class="word" type="text" value="deploy" />
+        <input class="clue" value="deploy" />
+        <span class="lineNum"></span>
+      </div>
+
+
       <div class="clueBlock" id="cluesDown">
         <div class="clueDirection" id="directionDown">DOWN</div>
       </div>
-    
-    </div>
+
+
+
+
     </div>
 
-    
 
-    <!--jquery-->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    
-<!--javascript-->
-    <script type="text/javascript" src="app.js"></script>
+
+
+
+  </div>
+
+
+
+
+
+
+  
+
+
+
+  <!--jquery-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+  <!--javascript-->
+  <script type="text/javascript" src="app.js"></script>
 </body>
-    </html>
-    
-    
+
+</html>

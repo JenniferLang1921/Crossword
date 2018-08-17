@@ -594,9 +594,17 @@ Play();
 $( "#btnCheck" ).click(function() {
 	  $( ".square input" ).each(function() {
 		 	if (!($(this).attr('data-letter') === ($(this).val().toUpperCase()))) {
-   				alert('incorrect');
+        $('<p>InCorrect</p>').appendTo('#AnswerCheck');
+          console.log('answercheck');
+         // $('<p>Correct</p>').appendTo('#AnswerCheck');
+       
 				$(this).val('');
-			} 
+			} else {
+       
+          $('<p>Correct</p>').appendTo('#AnswerCheck');
+          console.log('incorrect');
+        
+            }
 	});
 });
 
