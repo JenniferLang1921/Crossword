@@ -594,7 +594,7 @@ Play();
 $( "#btnCheck" ).click(function() {
 	  $( ".square input" ).each(function() {
 		 	if (!($(this).attr('data-letter') === ($(this).val().toUpperCase()))) {
-   				console.log('incorrect');
+   				alert('incorrect');
 				$(this).val('');
 			} 
 	});
