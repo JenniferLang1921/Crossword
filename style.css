@@ -3,67 +3,74 @@
 .container{
     position: absolute;
     bottom: 0; top: 0; left: 0; right: 0;
-    text-align: center;
+  
+    text-align: right;
+    
   }
+  
   
   .crosswordDisplay {
       top: 5rem;
+      
+     
   }
   
   .clueBlock{
-    position: relative;
+   
     margin-bottom: 5em;
   }
   .clueDirection{
-      text-align: left;
-      margin: 1em 0 0.25em 122px;
-      font-size: 1.5em;
+      text-align: center;
+      margin: 1em 0 0.25em 0px;
+      font-size: 1em;
       font-weight: bold;
       color: #000;
   }
   
-  .word, .clue, .lineNum{
-    display: inline-block;
-    height: 1.4em;  
-    padding: 0 5px;
-  }
+  
   .word{
     text-align: right;  
-    width: 100px;
-    margin: 0 20px 0 0;
+    width: 90%;
+    
+    
   }
   .clue{
-    width: 150px;
-    margin: 0 0 4px 0;
+    width: 90%;
+   
+    
   }
   .lineNum{
-  
-    font: .6em calibri;
-    line-height: 1.8em;
+    font: 1em calibri;
+    text-align: right;
+    
   
   }
   .clueReadOnly
   {
     border-color: rgba(0,0,0,0);
-    margin: 0;
-    outline: 0;
     color:#303030;
     background:none;
+    width:90%;
+   
+    
   }
   
   .crossword{
     display: block;  
-    background-color: navy;  
+    background-color: navy; 
+    width: 500px;
+   
   }
   .square{  
     margin: 0 1px 1px 0;
     display: inline-block;
     position: relative;
-    font: 20px Calibri;
+    font: 12px Calibri;
     width: 1.25em;
     height: 1.25em;
-    line-height: 1.25em;
+    line-height: 1em;
     vertical-align: top;
+    
   }
   .char:focus{
     -webkit-box-shadow: 0 0 0 2px rgb(0,133,180);
@@ -72,16 +79,17 @@
   }
   .char {
     font-family: sans-serif;
-    font-size:20px;
+    font-size:12px;
     text-transform: uppercase;
     outline: 0;
     border: 0;
     padding: 0;
-    margin: 1px 0 0 -1px;
+   /* margin: 1px 0 0 -1px;*/
     width: 1.25em;
     height: 1.25em;
     text-align: center;
     background-color: rgb(200, 200, 200);  
+    
   }
   .charReadOnly:focus{
     -webkit-box-shadow: 0 !important;
@@ -99,7 +107,7 @@
     top: 0; left: 0;
     text-align: left;
     color: rgb(0,0,0);
-    font-size: 0.5em;
+    font-size: 1em;
     line-height: 1em;
     pointer-events:none;
   }
@@ -130,5 +138,17 @@
       cursor: pointer;
      
   }
+
+  #title {
+    text-align: center;
+    font-family: 'Audiowide', cursive;
+  }
+
+
+  
+
+
+
+
  
  
