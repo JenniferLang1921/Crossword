@@ -59,6 +59,8 @@
     display: block;  
     background-color: navy; 
     width: 500px;
+    margin-left: auto;
+    margin-right: auto;
    
   }
   .square{  
