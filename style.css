@@ -62,7 +62,7 @@
 
 .crossword{
   display: block;  
-  background-color: navy; 
+  background-color: navy;
   padding-right: 15%;
 }
 
@@ -219,7 +219,7 @@ border-color: rgba(0,0,0,0);
   
   .crossword{
     display: block;  
-    background-color: rgb(32,32,32); 
+    background-color: navy; 
      
   }
   .square{  
@@ -308,7 +308,7 @@ border-color: rgba(0,0,0,0);
 @media screen and (max-width: 1024px) and (min-width: 768px) { 
   .crossword{
     display: block;  
-    background-color: purple; 
+    background-color: navy; 
     
      
   }
