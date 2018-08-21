@@ -118,6 +118,7 @@ function ToggleInputBoxes(active){
       b=document.getElementById('btnGen'),
       dir=document.getElementsByClassName('clueDirection'),
       char=document.getElementsByClassName('char');
+      
 
   if (active){
     RemoveClass(b,'disabled');
@@ -189,6 +190,7 @@ function PopulateBoard(){
     isOk = AddWordToBoard();
   }  
   return isOk;
+  
 }
 
 
@@ -224,6 +226,7 @@ function AddWordToBoard(){
       }
     }
     wordBank[curIndex].successfulMatches = [{x:12,y:12,dir:0}];
+    
   }
   
   else{  
@@ -231,7 +234,7 @@ function AddWordToBoard(){
     
     for(i = 0, len = wordBank.length; i < len; i++){
       curWord = wordBank[i];
-	  //console.log(curWord);
+	  console.log(curWord);
       curWord.effectiveMatches = 0;
       curWord.successfulMatches = [];
       for(var j = 0, lenJ = curWord.char.length; j < lenJ; j++){
@@ -506,7 +509,8 @@ function WordObj(wordData){
   this.totalMatches = 0;
   this.effectiveMatches = 0;
   this.successfulMatches = [];
-}
+
+  }
 
 
 //---------------------------------//
@@ -542,6 +546,17 @@ function CreateCallback(type, boardChar) {
       };
   }
 }
+
+function getAnswers() {
+
+document.getElementById("AnswerCheck").innerHTML = 'Charka, blockchain, AirBnB, facialrecognition, virtualreality, agile, Uber, drone, studentportal, kite, FOMO, tweet, SEO, URL';
+}
+
+
+//"Charka, blockchain, AirBnB, facialrecognition, virtualreality, agile, Uber, drone, studentportal, kite, FOMO, tweet, SEO, URL";
+
+
+
 
 
 //---------------------------------//

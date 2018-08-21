@@ -207,6 +207,7 @@ border-color: rgba(0,0,0,0);
   .clueBlock{
     position: relative;
     margin-bottom: 5em;
+    width: 60%;
   }
   .clueDirection{
       text-align: left;
