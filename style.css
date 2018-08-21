@@ -1,48 +1,53 @@
-
+/*styled for small then queried to get larger*/
 
 .container{
   position: absolute;
   bottom: 0; top: 0; left: 0; right: 0;
-
+ width: 100%;
   text-align: right;
+  font: sans-serif;
   
 }
-
-
-
 
 .clueBlock{
   position: relative;
-  margin-bottom: 5em;
+  
+  border: 1px solid black;
+  margin-top: 5px;
+ 
 }
+
+.line {
+  
+}
+
+/*titles ACROSS and DOWN*/
 .clueDirection{
     text-align: center;
-    margin: 1em 0 0.25em 0px;
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: bold;
     color: #000;
+    
 }
 
-
+/*you don't see this, words are hidden*/
 .word{
-  text-align: right;  
-  width: 90%;
-  
-  
+  background-color: pink;
 }
+
+/*clue text*/
 .clue{
-  
-    width: 500px;
-    margin: 0 0 4px 0;
+    width: 70%;
+   margin: 0 0 0 0;
+   font: 12px;
   }
  
   
-}
+/*num in clues*/
 .lineNum{
   font: 1em calibri;
-  text-align: center;
-  background-color: yellow;
-  
+  text-align: right;
+  margin: 0 50px 0 0;
 
 }
 .clueReadOnly
@@ -52,26 +57,25 @@
   outline: 0;
   color:#303030;
   background:none;
+  
 }
 
 .crossword{
   display: block;  
   background-color: navy; 
-  width: 500px;
-  margin-left: auto;
-  margin-right: auto;
-  
- 
+  padding-right: 15%;
 }
+
+ /*all squares on crossword, including ones you can't see*/
 .square{  
-  margin: 0 1px 0px 1px;
+  margin: 0 1px 0 0;
   display: inline-block;
   position: relative;
-  font: 12px Calibri;
-  width: 1.25em;
+  font: 9px Calibri;
+  width:1.25em;
   height: 1.25em;
   line-height: 1em;
-  vertical-align: top;
+  
   
 }
 .char:focus{
@@ -79,16 +83,18 @@
   -moz-box-shadow: 0 0 0 2px rgb(0,133,180);
   box-shadow: inset 0 0 0 2px rgb(0,133,180);  
 }
+
+ /*grey squares on crossword*/
 .char {
   font-family: sans-serif;
-  font-size:12px;
+  font-size:9px;
   text-transform: uppercase;
   outline: 0;
   border: 0;
   padding: 0;
- /* margin: 1px 0 0 -1px;*/
+ /*margin: 1px 0 0 -1px;*/
   width: 1.25em;
-  height: 1.25em;
+  height: 1.7em;
   text-align: center;
   background-color: rgb(200, 200, 200);  
   
@@ -103,11 +109,11 @@ border-color: rgba(0,0,0,0);
   outline: 0;
   color:#303030; 
 }
-
+/*num in the crossword squares*/
 .num{
   position: absolute;
   top: 0; left: 0;
-  text-align: center;
+  text-align: left;
   color: rgb(0,0,0);
   font-size: 1em;
   line-height: 1em;
@@ -146,6 +152,227 @@ border-color: rgba(0,0,0,0);
   text-align: center;
   font-family: 'Audiowide', cursive;
 }
+
+
+
+
+
+
+/*media queries*/
+/* large desktop*/
+@media screen and (max-width: 5500px) and (min-width: 768px) { 
+
+
+  .container{
+    position: absolute;
+    bottom: 0; top: 0; left: 0; right: 0;
+    text-align: center;
+  }
+  
+  .crosswordDisplay {
+      top: 5rem;
+  }
+  
+  .clueBlock{
+    position: relative;
+    margin-bottom: 5em;
+  }
+  .clueDirection{
+      text-align: left;
+      margin: 1em 0 0.25em 122px;
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #000;
+  }
+  .line{
+  }
+  .word, .clue, .lineNum{
+    display: inline-block;
+    height: 1.4em;  
+    
+  }
+  .word{
+    text-align: right;  
+    width: 100px;
+   
+   
+  }
+  .clue{
+    width: 500px;
+    margin: 0 0 0px 0;
+   
+  }
+  .lineNum{
+  
+    font: 1em calibri;
+    line-height: 1.8em;
+  
+  }
+  .clueReadOnly
+  {
+    border-color: rgba(0,0,0,0);
+    margin: 0;
+    outline: 0;
+    color:#303030;
+    background:none;
+  }
+  
+  .crossword{
+    display: block;  
+    background-color: rgb(32,32,32); 
+     
+  }
+  .square{  
+    margin: 0 1px 1px 0;
+    display: inline-block;
+    position: relative;
+    font: 24px Calibri;
+    width: 1.25em;
+    height: 1.25em;
+    line-height: 1.25em;
+    vertical-align: top;
+    
+  }
+  .char:focus{
+    -webkit-box-shadow: 0 0 0 2px rgb(0,133,180);
+    -moz-box-shadow: 0 0 0 2px rgb(0,133,180);
+    box-shadow: inset 0 0 0 2px rgb(0,133,180);  
+  }
+
+
+  /*grey squares on crossword*/
+  .char {
+    font-family: sans-serif;
+    font-size:24px;
+    text-transform: uppercase;
+    outline: 0;
+    border: 0;
+    padding: 0;
+    margin: 1px 0 0 -1px;
+    width: 1.25em;
+    height: 1.25em;
+    text-align: center;
+    background-color: rgb(200, 200, 200);  
+  }
+  .charReadOnly:focus{
+    -webkit-box-shadow: 0 !important;
+    -moz-box-shadow: 0 !important;
+    box-shadow: 0 !important;
+    
+  border-color: rgba(0,0,0,0);
+    margin: 0;
+    outline: 0;
+    color:#303030; 
+  }
+  
+  .num{
+    position: absolute;
+    top: 0; left: 0;
+    text-align: left;
+    color: rgb(0,0,0);
+    font-size: 0.5em;
+    line-height: 1em;
+    pointer-events:none;
+  }
+  
+  .hide{
+    visibility: hidden;
+  }
+  .disabled{
+    display: none !important;
+  }
+  
+  .btn:hover{
+    cursor: pointer;
+    background-color: rgb(150,150,150);
+  }
+  
+  #btnCheck {
+      position: absolute;
+      right: 2rem;
+      top: 1rem;
+      cursor: pointer;
+  }
+  
+  #btnReset {
+      position: absolute;
+      left: 2rem;
+      top: 1rem;
+      cursor: pointer;
+  }
+}
+
+
+
+/* ipad to wide phone*/
+@media screen and (max-width: 1024px) and (min-width: 768px) { 
+  .crossword{
+    display: block;  
+    background-color: purple; 
+    
+     
+  }
+  .square{  
+    margin: 1px 1px 1px 1px;
+    display: inline-block;
+    position: relative;
+    font: 12px Calibri;
+    width: 1.25em;
+    height: 1.25em;
+    line-height: 1.25em;
+    vertical-align: top;
+    
+   
+    
+  }
+  .char:focus{
+    -webkit-box-shadow: 0 0 0 2px rgb(0,133,180);
+    -moz-box-shadow: 0 0 0 1px rgb(0,133,180);
+    box-shadow: inset 0 0 0 2px rgb(0,133,180);  
+  }
+
+
+  /*grey squares on crossword*/
+  .char {
+    font-family: sans-serif;
+    font-size:12px;
+    text-transform: uppercase;
+    outline: 0;
+    border: 0;
+    padding: 0;
+    margin: 0px 0 0 0px;
+    width: 1.25em;
+    height: 1.25em;
+    text-align: center;
+    background-color: rgb(200, 200, 200);  
+  }
+  .charReadOnly:focus{
+    -webkit-box-shadow: 0 !important;
+    -moz-box-shadow: 0 !important;
+    box-shadow: 0 !important;
+    
+  border-color: rgba(0,0,0,0);
+    margin: 0;
+    outline: 0;
+    color:#303030; 
+  }
+  
+  .num{
+    position: absolute;
+    top: 0; left: 0;
+    text-align: left;
+    color: rgb(0,0,0);
+    font-size: 0.5em;
+    line-height: 1em;
+    pointer-events:none;
+  }
+ }
+
+
+
+
+
+
 
 
 
