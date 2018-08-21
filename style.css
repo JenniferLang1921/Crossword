@@ -1,152 +1,151 @@
 
 
 .container{
-    position: absolute;
-    bottom: 0; top: 0; left: 0; right: 0;
+  position: absolute;
+  bottom: 0; top: 0; left: 0; right: 0;
+
+  text-align: right;
   
-    text-align: right;
-    
-  }
-  
-  
- 
-  
-  .clueBlock{
-   
-    margin-bottom: 5em;
-  }
-  .clueDirection{
-      text-align: center;
-      margin: 1em 0 0.25em 0px;
-      font-size: 1em;
-      font-weight: bold;
-      color: #000;
-  }
-  
-  
-  .word{
-    text-align: right;  
-    width: 90%;
-    
-    
-  }
-  .clue{
-    width: 90%;
-   
-    
-  }
-  .lineNum{
-    font: 1em calibri;
-    text-align: right;
-    
-  
-  }
-  .clueReadOnly
-  {
-    border-color: rgba(0,0,0,0);
-    color:#303030;
-    background:none;
-    width:90%;
-   
-    
-  }
-  
-  .crossword{
-    display: block;  
-    background-color: navy; 
-    width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-   
-  }
-  .square{  
-    margin: 0 1px 1px 0;
-    display: inline-block;
-    position: relative;
-    font: 12px Calibri;
-    width: 1.25em;
-    height: 1.25em;
-    line-height: 1em;
-    vertical-align: top;
-    
-  }
-  .char:focus{
-    -webkit-box-shadow: 0 0 0 2px rgb(0,133,180);
-    -moz-box-shadow: 0 0 0 2px rgb(0,133,180);
-    box-shadow: inset 0 0 0 2px rgb(0,133,180);  
-  }
-  .char {
-    font-family: sans-serif;
-    font-size:12px;
-    text-transform: uppercase;
-    outline: 0;
-    border: 0;
-    padding: 0;
-   /* margin: 1px 0 0 -1px;*/
-    width: 1.25em;
-    height: 1.25em;
+}
+
+
+
+
+.clueBlock{
+  position: relative;
+  margin-bottom: 5em;
+}
+.clueDirection{
     text-align: center;
-    background-color: rgb(200, 200, 200);  
-    
-  }
-  .charReadOnly:focus{
-    -webkit-box-shadow: 0 !important;
-    -moz-box-shadow: 0 !important;
-    box-shadow: 0 !important;
-    
-  border-color: rgba(0,0,0,0);
-    margin: 0;
-    outline: 0;
-    color:#303030; 
-  }
-  
-  .num{
-    position: absolute;
-    top: 0; left: 0;
-    text-align: left;
-    color: rgb(0,0,0);
+    margin: 1em 0 0.25em 0px;
     font-size: 1em;
-    line-height: 1em;
-    pointer-events:none;
-  }
+    font-weight: bold;
+    color: #000;
+}
+
+
+.word{
+  text-align: right;  
+  width: 90%;
   
-  .hide{
-    visibility: hidden;
-  }
-  .disabled{
-    display: none !important;
-  }
   
-  .btn:hover{
+}
+.clue{
+  
+    width: 500px;
+    margin: 0 0 4px 0;
+  }
+ 
+  
+}
+.lineNum{
+  font: 1em calibri;
+  text-align: center;
+  background-color: yellow;
+  
+
+}
+.clueReadOnly
+{
+  border-color: rgba(0,0,0,0);
+  margin: 0;
+  outline: 0;
+  color:#303030;
+  background:none;
+}
+
+.crossword{
+  display: block;  
+  background-color: navy; 
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  
+ 
+}
+.square{  
+  margin: 0 1px 0px 1px;
+  display: inline-block;
+  position: relative;
+  font: 12px Calibri;
+  width: 1.25em;
+  height: 1.25em;
+  line-height: 1em;
+  vertical-align: top;
+  
+}
+.char:focus{
+  -webkit-box-shadow: 0 0 0 2px rgb(0,133,180);
+  -moz-box-shadow: 0 0 0 2px rgb(0,133,180);
+  box-shadow: inset 0 0 0 2px rgb(0,133,180);  
+}
+.char {
+  font-family: sans-serif;
+  font-size:12px;
+  text-transform: uppercase;
+  outline: 0;
+  border: 0;
+  padding: 0;
+ /* margin: 1px 0 0 -1px;*/
+  width: 1.25em;
+  height: 1.25em;
+  text-align: center;
+  background-color: rgb(200, 200, 200);  
+  
+}
+.charReadOnly:focus{
+  -webkit-box-shadow: 0 !important;
+  -moz-box-shadow: 0 !important;
+  box-shadow: 0 !important;
+  
+border-color: rgba(0,0,0,0);
+  margin: 0;
+  outline: 0;
+  color:#303030; 
+}
+
+.num{
+  position: absolute;
+  top: 0; left: 0;
+  text-align: center;
+  color: rgb(0,0,0);
+  font-size: 1em;
+  line-height: 1em;
+  pointer-events:none;
+ 
+}
+
+.hide{
+  visibility: hidden;
+}
+.disabled{
+  display: none !important;
+}
+
+.btn:hover{
+  cursor: pointer;
+  background-color: rgb(150,150,150);
+}
+
+#btnCheck {
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
     cursor: pointer;
-    background-color: rgb(150,150,150);
-  }
-  
-  #btnCheck {
-      position: absolute;
-      right: 2rem;
-      top: 1rem;
-      cursor: pointer;
-  }
-  
-  #btnReset {
-      position: absolute;
-      left: 2rem;
-      top: 1rem;
-      cursor: pointer;
-     
-  }
+}
 
-  #title {
-    text-align: center;
-    font-family: 'Audiowide', cursive;
-  }
+#btnReset {
+    position: absolute;
+    left: 2rem;
+    top: 1rem;
+    cursor: pointer;
+   
+}
 
-
-  
+#title {
+  text-align: center;
+  font-family: 'Audiowide', cursive;
+}
 
 
 
-
- 
- 
