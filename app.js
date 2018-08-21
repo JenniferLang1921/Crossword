@@ -197,7 +197,7 @@ function PrepareBoard(){
   for(var i = 0, len = wordArr.length; i < len; i++){
     wordBank.push(new WordObj(wordArr[i]));
   }
-  //console.log(wordBank);
+  console.log(wordBank);
   
   for(i = 0; i < wordBank.length; i++){
     for(var j = 0, wA=wordBank[i]; j<wA.char.length; j++){
@@ -397,6 +397,7 @@ function BoardToHtml(blank){
 function BoardCharToElement(c){
   var inner = "";
  //console.log(inner);
+ 
   
   if (c.value !== null){
     var num = "";
