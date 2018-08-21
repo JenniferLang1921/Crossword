@@ -46,6 +46,7 @@ function Play(){
   ToggleInputBoxes(false);
   
   FormatClues();
+  console.log (charEleArr);
 }
 
 function FormatClues(){

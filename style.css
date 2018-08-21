@@ -4,21 +4,28 @@
   position: absolute;
   bottom: 0; top: 0; left: 0; right: 0;
  width: 100%;
-  text-align: right;
   font: sans-serif;
+  text-align: center;
   
 }
 
-.clueBlock{
+.clueBlock {
   position: relative;
   
   border: 1px solid black;
-  margin-top: 5px;
+  margin:10px 0 20px 25px;
+  box-shadow: 10px 10px 50px 0px grey;
+  width: 90%;
+  font-family: sans-serif;
+  text-align: left;
  
 }
+  
 
 .line {
-  
+   margin: 0 0 0 0;
+     text-align: left;
+  white-space:nowrap;
 }
 
 /*titles ACROSS and DOWN*/
@@ -29,6 +36,11 @@
     color: #000;
     
 }
+.word, .clue, .lineNum{
+  display: inline-block;
+  height: 1.4em;  
+  
+}
 
 /*you don't see this, words are hidden*/
 .word{
@@ -37,17 +49,18 @@
 
 /*clue text*/
 .clue{
-    width: 70%;
+    
    margin: 0 0 0 0;
-   font: 12px;
+   font: 16px;
+   
+   
   }
  
   
 /*num in clues*/
 .lineNum{
   font: 1em calibri;
-  text-align: right;
-  margin: 0 50px 0 0;
+  
 
 }
 .clueReadOnly
@@ -57,7 +70,13 @@
   outline: 0;
   color:#303030;
   background:none;
+  width: 70%;
+
   
+}
+input[value] {
+  
+  font-size: 12px;
 }
 
 .crossword{
@@ -97,6 +116,7 @@
   height: 1.7em;
   text-align: center;
   background-color: rgb(200, 200, 200);  
+  
   
 }
 .charReadOnly:focus{
@@ -151,6 +171,17 @@ border-color: rgba(0,0,0,0);
 #title {
   text-align: center;
   font-family: 'Audiowide', cursive;
+}
+
+#answerButton {
+  width: 150px;
+  height: 60px;
+  background-color: grey;
+  color: white;
+  font-size: 20px;
+  border-radius: 12px;
+  box-shadow: 10px 10px 50px 0px grey;
+  
 }
 
 
@@ -305,13 +336,21 @@ border-color: rgba(0,0,0,0);
 
 
 /* ipad to wide phone*/
+
 @media screen and (max-width: 1024px) and (min-width: 768px) { 
   .crossword{
     display: block;  
-    background-color: navy; 
-    
-     
+    background-color: navy;   
   }
+
+/*num in clues*/
+.lineNum{
+  font: 1em calibri;
+  
+  margin: 0px 50px 0 0;
+
+}
+
   .square{  
     margin: 1px 1px 1px 1px;
     display: inline-block;
