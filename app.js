@@ -547,10 +547,18 @@ function CreateCallback(type, boardChar) {
   }
 }
 
-function getAnswers() {
+//function getAnswers() {
+  //$("#AnswerCheck").show();
+//document.getElementById("AnswerCheck").innerHTML = 'Charka, blockchain, AirBnB, facialrecognition, virtualreality, agile, Uber, drone, studentportal, kite, FOMO, tweet, SEO, URL';
+//document.getElementById("answerButton").innerHTML = "Hide Answers";
 
-document.getElementById("AnswerCheck").innerHTML = 'Charka, blockchain, AirBnB, facialrecognition, virtualreality, agile, Uber, drone, studentportal, kite, FOMO, tweet, SEO, URL';
-}
+//}
+
+
+  $('#answerButton').on('click', function() {
+   $("#AnswerCheck").toggleClass("hidden"); 
+   
+ });
 
 
 //"Charka, blockchain, AirBnB, facialrecognition, virtualreality, agile, Uber, drone, studentportal, kite, FOMO, tweet, SEO, URL";
@@ -580,6 +588,7 @@ function ArrayToString(a,s){
 
 function AddClass(ele,classStr){
   ele.className = ele.className.replaceAll(' '+classStr,'')+' '+classStr;
+  
 }
 
 function RemoveClass(ele,classStr){
