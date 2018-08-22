@@ -32,7 +32,7 @@ var Bounds = {
 //---------------------------------//
 //   MAIN                          //
 
-console.log("working");
+
 
 function Play(){  
   var charEleArr = document.getElementsByClassName('char');
@@ -164,6 +164,7 @@ function GetWordsFromInput(){
   for(var i=0,val,w=document.getElementsByClassName("line");i<w.length;i++){
     val = w[i].getElementsByClassName("word")[0].value.toUpperCase();
     if (val !== null && val.length > 1){wordArr.push({ele:w[i],value:val});}
+    
   }
 }
 
@@ -234,7 +235,7 @@ function AddWordToBoard(){
     
     for(i = 0, len = wordBank.length; i < len; i++){
       curWord = wordBank[i];
-	  console.log(curWord);
+	  
       curWord.effectiveMatches = 0;
       curWord.successfulMatches = [];
       for(var j = 0, lenJ = curWord.char.length; j < lenJ; j++){
@@ -509,8 +510,9 @@ function WordObj(wordData){
   this.totalMatches = 0;
   this.effectiveMatches = 0;
   this.successfulMatches = [];
-
+  
   }
+  
 
 
 //---------------------------------//
@@ -557,7 +559,7 @@ function CreateCallback(type, boardChar) {
 
   $('#answerButton').on('click', function() {
    $("#AnswerCheck").toggleClass("hidden"); 
-   
+     
  });
 
 
