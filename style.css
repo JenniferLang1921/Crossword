@@ -170,7 +170,7 @@ border-color: rgba(0,0,0,0);
 
 #title {
   text-align: center;
-  font-family: 'Audiowide', cursive;
+  /*font-family: 'Audiowide', cursive; */
 }
 
 #answerButton {
