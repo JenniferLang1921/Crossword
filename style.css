@@ -135,8 +135,8 @@ border-color: rgba(0,0,0,0);
   top: 0; left: 0;
   text-align: left;
   color: rgb(0,0,0);
-  font-size: 1em;
-  line-height: 1em;
+  font-size: 1.5em;
+  line-height: 1.5em;
   pointer-events:none;
  
 }
@@ -224,7 +224,6 @@ border-color: rgba(0,0,0,0);
   }
   .clueDirection{
       text-align: left;
-     
       font-size: 1.5em;
       font-weight: bold;
       color: #000;
@@ -248,7 +247,7 @@ border-color: rgba(0,0,0,0);
   }
   .lineNum{
   
-    font: 1em calibri;
+    font: 50px calibri;
     line-height: 1.8em;
   
   }
@@ -310,7 +309,7 @@ border-color: rgba(0,0,0,0);
     top: 0; left: 0;
     text-align: left;
     color: rgb(0,0,0);
-    font-size: 0.5em;
+    font-size: 1em;
     line-height: 1em;
     pointer-events:none;
   }
@@ -349,14 +348,14 @@ border-color: rgba(0,0,0,0);
 @media screen and (max-width: 1024px) and (min-width: 768px) { 
   .crossword{
     display: block;  
-    background-color: navy;   
+    background-color: #09094d;   
   }
 
 /*num in clues*/
 .lineNum{
   font: 1em calibri;
   
-  margin: 0px 50px 0 0;
+  margin: 0px 0px 0 0;
 
 }
 
@@ -410,7 +409,7 @@ border-color: rgba(0,0,0,0);
     top: 0; left: 0;
     text-align: left;
     color: rgb(0,0,0);
-    font-size: 0.5em;
+    font-size: 1em;
     line-height: 1em;
     pointer-events:none;
   }
